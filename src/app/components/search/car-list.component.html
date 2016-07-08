@@ -1,0 +1,20 @@
+<div class="jumbotron search-results" *ngIf="cars">
+    <p class="legend">HINT: You can click a result to access the checkout page</p>
+    <div class="list-group">
+        <template ngFor let-car [ngForOf]="cars">
+            <div class="list-group-item selectable-item" (click)="goToCar(car)">
+                <div class="row-content">
+                    <div class="least-content">{{car.TotalPrice}} $</div>
+                    <h4 class="list-group-item-heading">{{car.CarType.CarTypeName}}</h4>
+                    <p class="list-group-item-text">{{car.PickupAirport}}: {{car.LocationDescription}}</p>
+                    <ul>
+                        <li>{{car.CarType.TypicalSeating}}</li>
+                        <li>{{car.CarType.PossibleFeatures}}</li>
+                        <li>{{car.CarType.PossibleModels}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list-group-separator"></div>
+        </template>
+    </div>
+</div>

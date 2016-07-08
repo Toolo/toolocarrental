@@ -1,0 +1,17 @@
+.app-logo {
+    display: block;
+    margin: 20px auto 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+
+main {
+    margin-top: -50px;
+    position: relative;
+}
+
+.app-footer {
+    text-align: right;
+    margin-top: 20px;
+}
