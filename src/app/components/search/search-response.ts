@@ -1,7 +1,5 @@
-
 import { CarType } from './car-type';
 import { Car } from './car';
-
 
 export interface SearchResponse {
     Errors: any;

@@ -6,7 +6,7 @@ import {
     addProviders,
 } from '@angular/core/testing';
 import { Http } from '@angular/http';
-import {HTTP_PROVIDERS} from '@angular/http';
+import { HTTP_PROVIDERS } from '@angular/http';
 import { SearchService } from './search.service';
 import { Query } from './query';
 

@@ -9,8 +9,16 @@ These are the elections I made for the demo:
 ## Boilerplate
 - [angular2 webpack introduction](https://angular.io/docs/ts/latest/guide/webpack.html) base project which uses Webpack for development and building.
 
-## Process
+## Development process and thoughts
 - Sign up for Hotwire API and explore its methods
 - Draw a wireframe for the expected result
 - Implement SearchService
-- Create a SearchComponent which shows search controls and search results
+- Create a SearchComponent which shows search controls and calls the SearchService
+- Create a CarListComponent to show search results
+- Include UI libraries for a better look
+- Add some basic custom styles
+
+## Development
+- Run live server with: npm start
+- Run tests with: npm test
+- Build with: npm run build

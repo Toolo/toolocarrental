@@ -47,6 +47,7 @@
             </div>
             <div class="text-right">
                 <span *ngIf="searching">Searching...</span>
+                <button type="button" class="btn btn-danger btn-lg" *ngIf="results" (click)="clear()">Clear</button>
                 <button type="submit" class="btn btn-primary btn-lg btn-raised" [disabled]="searching">Search</button>
             </div>
         </fieldset>
