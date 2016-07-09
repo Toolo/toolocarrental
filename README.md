@@ -24,3 +24,4 @@ These are the elections I made for the demo:
 - Build with: npm run build
 - Deploy on github pages
 - Fix error with CORS by updating to JSONP
+- Deploy to Heroku due to errors with non-secure requests from HTTPs to HTTP
