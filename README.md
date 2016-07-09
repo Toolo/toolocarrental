@@ -17,11 +17,11 @@ These are the elections I made for the demo:
 - Create a CarListComponent to show search results
 - Include UI libraries for a better look
 - Add some basic custom styles
+- Deploy on github pages
+- Fix error with CORS by updating to JSONP
+- Deploy to Heroku due to errors with non-secure requests from HTTPs to HTTP
 
 ## Development
 - Run live server with: npm start
 - Run tests with: npm test
 - Build with: npm run build
-- Deploy on github pages
-- Fix error with CORS by updating to JSONP
-- Deploy to Heroku due to errors with non-secure requests from HTTPs to HTTP
