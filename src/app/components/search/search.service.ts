@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers, Response, URLSearchParams } from '@angular/http';
+import { Jsonp, Headers, Response, URLSearchParams } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 
 import { Query } from './query';
@@ -12,13 +12,13 @@ export class SearchService {
 
     private static API_KEY = 'v7kpcstj4pzqw6t2htdtvubq';
     private static API_URL = 'http://api.hotwire.com/v1/search/car';
-    private static FORMAT = 'JSON';
+    private static FORMAT = 'JSONP';
     private static STATUS_SUCCESS = '0';
 
-    constructor(private http: Http) { }
+    constructor(private jsonp: Jsonp) { }
 
     search(query: Query) {
-        return this.http.get(SearchService.API_URL, {
+        return this.jsonp.get(SearchService.API_URL, {
             search: this.buildSearchParams(query)
         }).toPromise()
             .then(this.parseResponse)
@@ -58,6 +58,7 @@ export class SearchService {
         params.set('dropofftime', query.dropoffTime);
         params.set('apikey', SearchService.API_KEY);
         params.set('format', SearchService.FORMAT);
+        params.set('callback', 'JSONP_CALLBACK');
         return params;
     }
 

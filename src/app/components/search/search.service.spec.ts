@@ -5,8 +5,7 @@ import {
     beforeEach,
     addProviders,
 } from '@angular/core/testing';
-import { Http } from '@angular/http';
-import { HTTP_PROVIDERS } from '@angular/http';
+import { JSONP_PROVIDERS } from '@angular/http';
 import { SearchService } from './search.service';
 import { Query } from './query';
 
@@ -14,7 +13,7 @@ describe('SearchService', () => {
 
     let searchService: SearchService;
 
-    beforeEach(() => addProviders([HTTP_PROVIDERS, SearchService]));
+    beforeEach(() => addProviders([JSONP_PROVIDERS, SearchService]));
 
     beforeEach(inject([SearchService], (s:SearchService) => searchService = s));
 

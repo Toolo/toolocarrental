@@ -22,3 +22,5 @@ These are the elections I made for the demo:
 - Run live server with: npm start
 - Run tests with: npm test
 - Build with: npm run build
+- Deploy on github pages
+- Fix error with CORS by updating to JSONP
